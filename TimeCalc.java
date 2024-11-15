@@ -15,6 +15,12 @@ public class TimeCalc {
             totalminutes = totalminutes-60;  
         }
         newhours = newhours%24;
-        System.out.println(newminutes +" " +newhours);
+        String minutes1 = Integer.toString(newminutes);
+        String hours1 = Integer.toString(newhours);
+        if (newminutes<10)
+            minutes1 = "0" + newminutes;
+        if (newhours<10)
+            hours1 = "0" + newhours;
+        System.out.println(hours1 +":" +minutes1);
     }
 }
