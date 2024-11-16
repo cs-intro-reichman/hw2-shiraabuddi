@@ -6,12 +6,12 @@ public class Collatz {
 		String mode=args[1];
 		int numnow =0;
 		int index = 0;
+		mode = mode.toLowerCase();
 		if (mode.equals("v")){
 			System.err.println("");
 			for (int i = 0; i < numtime; i++) {
 				numnow = i + 1;
 				index = 2;
-				System.out.print(numnow + " ");
 				if (numnow%2 == 0){
 					numnow = numnow/2;
 				}
@@ -33,7 +33,6 @@ public class Collatz {
 				System.err.println("");
 			
 			}
-			System.err.println("");
 			System.err.println("Every one of the first " + numtime +" hailstone sequences reached 1.");
 		}
 		if (mode.equals("c")){
