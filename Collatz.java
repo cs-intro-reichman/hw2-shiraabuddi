@@ -7,6 +7,8 @@ public class Collatz {
 		int numnow =0;
 		int index = 0;
 		if (mode.equals("v")){
+			System.err.println("Every one of the first " + numtime +" hailstone sequences reached 1.");
+			System.err.println("");
 			for (int i = 0; i < numtime; i++) {
 				numnow = i + 1;
 				index = 2;
@@ -32,8 +34,6 @@ public class Collatz {
 				System.err.println("");
 			
 			}
-			System.err.println("");
-			System.err.println("Every one of the first " + numtime +" hailstone sequences reached 1.");
 		}
 		if (mode.equals("c")){
 			System.err.println("Every one of the first " + numtime +" hailstone sequences reached 1.");
