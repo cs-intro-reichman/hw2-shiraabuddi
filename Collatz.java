@@ -12,6 +12,7 @@ public class Collatz {
 			for (int i = 0; i < numtime; i++) {
 				numnow = i + 1;
 				index = 2;
+				System.out.print(numnow + " ");
 				if (numnow%2 == 0){
 					numnow = numnow/2;
 				}
