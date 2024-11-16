@@ -37,7 +37,6 @@ public class Collatz {
 			System.err.println("Every one of the first " + numtime +" hailstone sequences reached 1.");
 		}
 		if (mode.equals("c")){
-			System.err.println("");
 			System.err.println("Every one of the first " + numtime +" hailstone sequences reached 1.");
 		}
 
